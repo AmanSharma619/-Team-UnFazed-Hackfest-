@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body{
+    overflow-x: hidden;
+}
+:root{
+    --lightsecond:#F2F2F2;
+    --lightfirst:#ffffff;
+    --lightthird:#22B9CA;
+}
+.navbar{
+    width:100vw;
+    height:10vh;
+display:flex;
+background-color:var(--lightfirst);
+box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.318);
+overflow-x: hidden;
+}
+.main{
+    width:100vw;
+    height:90vh;
+    overflow-x: hidden;
+}
+.web{
+    height:10vh;
+    width:20vw;
+    display:flex;
+}
+.logo{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+align-items: center;
+}
+.name{
+    width:70%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+.img1{
+height:50%;
+width:60%;
+display:flex;
+}
+.img1 img{position: relative;
+    top:0.5vh;
+    object-fit: cover;
+}
+.name .t1{
+    font-weight: 700;
+    font-size: 30px;
+    color:var(--lightthird);
+}
+.options{
+    height:10vh;
+    width:60vw;
+}
+.profile{
+    height:10vh;
+    width:20vw;
+}
+.options{
+    display:flex;
+    gap:2vw;
+    align-items: center;
+    justify-content: space-around;
+}
+ a:link,  a:visited {
+    color: inherit; /* Ensures the color doesn't change after visiting */
+    text-decoration: none; /* Remove underline (optional) */
+}
+.options a:hover{
+    transition-property: all;
+    transition-duration: 0.15s;
+    cursor:pointer;
+    box-shadow: 0px 2px 0px 0px var(--lightthird);
+    color:var(--lightthird);
+}
+a{
+    display: inline-block;
+}
+.options div{
+
+    font-weight: 500;
+    font-size: 18px;
+}
+.options div a:visited{
+    color: black;
+}
+.profile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color:var(--lightthird);
+    width:10vw;
+    height:7vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0.55vw;
+    color:var(--lightfirst);
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.login a{
+    background-color:var(--lightthird);
+    width:80%;
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0.55vw;
+    color:var(--lightfirst);
+    font-weight: 500;
+    font-size: 18px;
+}
+.options>div:hover{
+    transition-property: all;
+    transition-duration: 0.15s;
+    cursor:pointer;
+    box-shadow: 0px 2px 0px 0px var(--lightthird);
+    color:var(--lightthird);
+}
+.login:hover{
+    text-decoration: underline;
+    width:12vw;
+    height:9vh;
+    transition-property: all;
+    transition-duration: 0.15s;
+    cursor:pointer;
+}
+.login a:hover{
+    text-decoration: underline;
+    width:85%;
+    height:60%;
+    transition-property: all;
+    transition-duration: 0.15s;
+    cursor:pointer;
+}
+.main{
+    
+    height: 80vh;
+    width: 100%;
+    background-color:var(--lightthird);
+              overflow-y: hidden;
+}
+
+.secondary{
+    height: 100%;
+    width: 100%;
+   
+   /* background: url(/Images/curve.jpg) no-repeat; */
+  
+    background-position: bottom;
+    background-size: contain;
+}
+.content{
+    display: flex;
+    font-size: 25px;
+    height: 50vh;
+    width: 60vw;
+   /* border: 1px solid black; */
+}
+
+.content {
+    width: 90vw;
+    height: 70vh;
+    position: relative;
+    top: 15%;
+    left: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+}
+
+.container{
+    border-radius: 50% 50%;
+    position: relative;
+    /* border: 1px solid black; */
+    height: 38vh;
+    width: 25vw;
+    right: 2%;
+    top: 10%;
+    overflow: hidden;
+    position:relative;
+    left :3vw;
+    bottom:10vh;
+}
+.images{
+    height: 100%;
+    display: flex;
+    animation: slideshow  linear 10s infinite;
+    object-fit: contain;
+}
+.images img{
+    height: 100%;
+    
+    
+}
+@keyframes slideshow {
+
+    0%{
+        transform: translateX(0);
+    }
+    
+    /* 25%{
+        transform: translateX(-95%);
+    }
+    50%{
+        transform: translateX(-165%);
+    }
+    75%{
+        transform: translateX(-237%);
+    }
+     */
+    100%{
+        transform: translateX(-430%);
+    }
+}
+.buttondiv{
+    
+    margin:  40px auto ;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    gap: 50px;
+   
+}
+.defbutton{
+    font-family:inherit;
+    font-weight: 700;
+    font-size: 16px;
+    height: 10vh;
+    width: 20vw;
+    border-radius: 1vw;
+    border:1px solid white;
+    background: black;
+    transition: all 0.13s;
+    color: var(--lightfirst);
+    cursor: pointer;
+}
+.defbutton:hover{
+    background-color: var(--lightsecond);
+    border: 2px solid black;
+    color: #22B9CA;
+
+}
+.navbutton button{
+width: 10vw;
+height: 5vh;
+}
+.navbutton{
+    position: relative;
+    right: 2%;
+}
+.vision{
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    overflow-x: hidden;
+
+}
+.about{
+    margin: auto;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+ul li{
+    cursor: pointer;
+}
+.button{
+    background-color: var(--lightfirst);
+    height:8vh;
+    width:10vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    border: 0.1px solid var(--lightthird);
+    font-size: 18px;
+}
+.button:hover{
+    background-color: var(--lightthird);
+    color: var(--lightfirst);
+    transition-property: all;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}

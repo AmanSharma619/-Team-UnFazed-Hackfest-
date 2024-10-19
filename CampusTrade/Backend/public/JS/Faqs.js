@@ -1,0 +1,61 @@
+let loggedin=false
+
+document.querySelectorAll(".defbutton").forEach(e=>{
+    e.addEventListener("click",()=>{
+        if(loggedin==false){
+            window.location.href="../HTML/register.html"
+        }
+    })
+})
+document.getElementById("home").addEventListener("click",()=>{
+    window.location.href="/Home"
+})
+document.getElementById("about").addEventListener("click",()=>{
+    window.location.href="/AboutUs"
+})
+document.getElementById("bos").addEventListener("click",()=>{
+    window.location.href="/BuyOrSell"
+})
+document.getElementById("contact").addEventListener("click",()=>{
+    window.location.href="/faqs"
+})
+document.getElementById("login").addEventListener("click",()=>{
+    window.location.href="/register"
+})
+if(loggedin==true){
+    document.getElementById("login").addEventListener("click",()=>{
+    window.location.href="/profile"
+})
+}
+document.getElementById("login").addEventListener("click",()=>{
+    window.location.href="/register"
+})
+
+document.getElementById("id1").addEventListener("click",()=>{
+   document.getElementById("id1").style.transform='rotate(180deg)'
+    document.getElementById("a1").style.height="30vh";
+})
+document.getElementById("id2").addEventListener("click",()=>{
+     document.getElementById("id2").style.transform='rotate(180deg)'
+    document.getElementById("a2").style.height="30vh";
+})
+document.getElementById("id3").addEventListener("click",()=>{
+     document.getElementById("id3").style.transform='rotate(180deg)'
+    document.getElementById("a3").style.height="30vh";
+})
+document.getElementById("id4").addEventListener("click",()=>{
+     document.getElementById("id4").style.transform='rotate(180deg)'
+    document.getElementById("a4").style.height="30vh";
+})
+document.getElementById("id5").addEventListener("click",()=>{
+     document.getElementById("id5").style.transform='rotate(180deg)'
+    document.getElementById("a1=5").style.height="30vh";
+})
+document.getElementById("id6").addEventListener("click",()=>{
+     document.getElementById("id6").style.transform='rotate(180deg)'
+    document.getElementById("a6").style.height="30vh";
+})
+document.getElementById("id7").addEventListener("click",()=>{
+     document.getElementById("id7").style.transform='rotate(180deg)'
+    document.getElementById("a7").style.height="30vh";
+})

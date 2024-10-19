@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body{
+    background-color: #22B9CA;
+    font-family: "Afacad Flux", sans-serif;
+}
+.logcontainer{
+    display: flex;
+    margin: 2% auto ;
+    height: 85vh;
+    width: 65vw;
+    background-color: white;
+    border-radius: 23px;
+}
+.left{
+    height: 100%;
+    width: 40%;
+    border-radius: inherit;
+    background: url(../Images/BuyForm.jpg);
+    background-size: cover;
+}
+#photoo{
+    width:10vw;
+}
+.right{
+    padding-top: 50px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    color: #4a4a4b;
+    display: flex;
+    flex-direction: column;
+    
+}
+p{font-size: 18px;
+    margin: 0;
+}
+input{
+    font-family: "Afacad Flux", sans-serif;
+    height: 7vh;
+    width: 350px;
+    border-radius: 7px;
+    border: none;
+    background-color: #DDE2E7;
+    font-size: 14px;
+}
+h2{
+    margin: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#submit{
+    margin: auto;
+    font-family: "Afacad Flux", sans-serif;
+   border: 1px solid #22B9CA;
+   border-radius: 6px;
+   color: #22B9CA;
+   transition: all 0.3s;
+   cursor: pointer;
+   width: 20vw;
+   height: 8vh;
+}
+#submit:hover{
+    background-color: #22B9CA;
+    color: white;
+}
+#t1{
+    height:5vh;
+}
